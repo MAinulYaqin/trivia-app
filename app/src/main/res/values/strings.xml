@@ -3,7 +3,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="hello_title">Hello Title</string>
+    <string name="hello_title">Android Trivia App</string>
     <string name="play">play</string>
     <string name="hello_game_fragment">Hello Game Fragment</string>
+
+    <!--  GAME WON  -->
+    <string name="you_won">You Won</string>
+    <string name="back_to_home">back to home</string>
+
+    <!--  GAME OVER  -->
+    <string name="try_again">Try Again</string>
+    <string name="submit">submit</string>
 </resources>

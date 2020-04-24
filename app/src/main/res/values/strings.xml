@@ -7,6 +7,8 @@
     <string name="play">play</string>
     <string name="hello_game_fragment">Hello Game Fragment</string>
 
+    <string name="title_android_trivia_question">Android Trivia (%1$d/%2$d)</string>
+
     <!--  GAME WON  -->
     <string name="you_won">You Won</string>
     <string name="back_to_home">back to home</string>

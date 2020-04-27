@@ -16,4 +16,5 @@
     <!--  GAME OVER  -->
     <string name="try_again">Try Again</string>
     <string name="submit">submit</string>
+    <string name="About">About</string>
 </resources>

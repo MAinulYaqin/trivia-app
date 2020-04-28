@@ -49,6 +49,11 @@
             app:popExitAnim="@anim/slide_out_left"
             app:popUpTo="@id/titleFragment"
             app:popUpToInclusive="true" />
+        <argument
+            android:name="numQuestions"
+            app:argType="integer" />
+        <argument android:name="numCorrects"
+            app:argType="integer" />
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"

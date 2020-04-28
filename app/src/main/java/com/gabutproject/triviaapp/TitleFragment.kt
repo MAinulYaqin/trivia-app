@@ -23,7 +23,7 @@ class TitleFragment : Fragment() {
             inflater, R.layout.title_fragment, container, false
         )
         binding.playButton.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_titleFragment_to_gameFragment)
+            Navigation.createNavigateOnClickListener(TitleFragmentDirections.actionTitleFragmentToGameFragment())
         )
         setHasOptionsMenu(true)
         // set the header title back to normal

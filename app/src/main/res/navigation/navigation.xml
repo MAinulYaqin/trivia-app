@@ -27,7 +27,9 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/gameFragment"
+            app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_gameFragment_to_gameOverFragment"
             app:destination="@id/gameOverFragment"
@@ -66,11 +68,14 @@
             app:exitAnim="@anim/slide_out_right"
             app:popEnterAnim="@anim/slide_in_right"
             app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/gameFragment"
-            app:popUpToInclusive="true" />
+            app:popUpTo="@id/gameFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.gabutproject.triviaapp.AboutFragment"
         android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/rulesFragment"
+        android:name="com.gabutproject.triviaapp.RulesFragment"
+        android:label="RulesFragment" />
 </navigation>

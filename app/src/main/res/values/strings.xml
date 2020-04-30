@@ -22,4 +22,5 @@
     <string name="rules">Rules</string>
     <string name="rules_description">you sud answer the questions correctly to</string>
     <string name="you_win_image">You Win Image</string>
+    <string name="image_header">image header</string>
 </resources>

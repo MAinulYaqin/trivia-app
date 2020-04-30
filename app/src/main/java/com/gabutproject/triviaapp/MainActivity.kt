@@ -6,6 +6,7 @@ import android.view.MenuInflater
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
@@ -24,7 +25,16 @@ class MainActivity : AppCompatActivity() {
         drawerLayout = binding.drawerLayout
         val navController: NavController = this.findNavController(R.id.myNavHostFragment)
 
+        // initialization the drawer
         NavigationUI.setupActionBarWithNavController(this, navController, drawerLayout)
+        // prevent nav gesture if not on start destination
+        navController.addOnDestinationChangedListener { nc: NavController, nd: NavDestination, bundle: Bundle? ->
+            if (nd.id == nc.graph.startDestination) {
+                drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
+            } else {
+                drawerLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+            }
+        }
         NavigationUI.setupWithNavController(binding.navView, navController)
     }
 

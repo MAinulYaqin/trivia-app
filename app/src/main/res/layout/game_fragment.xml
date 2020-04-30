@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -18,6 +19,17 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <ImageView
+                android:id="@+id/headerImage"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/image_header_height"
+                android:layout_margin="16dp"
+                android:contentDescription="Question image"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/drawable_trivia" />
+
             <TextView
                 android:id="@+id/question_text"
                 style="@style/default_text_style"
@@ -29,7 +41,7 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headerImage"
                 app:layout_constraintVertical_bias="0.3" />
 
             <RadioGroup
@@ -52,28 +64,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="2dp"
-                    android:text="@{game.answers[0]}" />
+                    android:text="@{game.answers[0]}"
+                    tools:text="answer 1" />
 
                 <RadioButton
                     android:id="@+id/secondAnswerRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="2dp"
-                    android:text="@{game.answers[1]}" />
+                    android:text="@{game.answers[1]}"
+                    tools:text="answer 2" />
 
                 <RadioButton
                     android:id="@+id/thirdAnswerRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="2dp"
-                    android:text="@{game.answers[2]}" />
+                    android:text="@{game.answers[2]}"
+                    tools:text="answer 3" />
 
                 <RadioButton
                     android:id="@+id/fourthAnswerRadioButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginVertical="2dp"
-                    android:text="@{game.answers[3]}" />
+                    android:text="@{game.answers[3]}"
+                    tools:text="answer 4" />
             </RadioGroup>
 
             <Button

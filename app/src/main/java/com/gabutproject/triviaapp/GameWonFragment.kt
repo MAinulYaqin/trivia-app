@@ -22,7 +22,7 @@ class GameWonFragment : Fragment() {
         )
         binding.continueButton.setOnClickListener {
             it.findNavController()
-                .navigate(GameWonFragmentDirections.actionGameWonFragmentToTitleFragment())
+                .navigate(GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
         }
 
         setHasOptionsMenu(true)

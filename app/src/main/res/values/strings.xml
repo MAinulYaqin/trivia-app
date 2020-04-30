@@ -11,7 +11,7 @@
 
     <!--  GAME WON  -->
     <string name="you_won">You Won</string>
-    <string name="back_to_home">back to home</string>
+    <string name="answer_more_questions">answer more questions</string>
     <string name="correct_answer">correct answer %1$d/%2$d</string>
 
     <!--  GAME OVER  -->
@@ -21,4 +21,5 @@
     <string name="share">share</string>
     <string name="rules">Rules</string>
     <string name="rules_description">you sud answer the questions correctly to</string>
+    <string name="you_win_image">You Win Image</string>
 </resources>

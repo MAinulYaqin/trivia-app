@@ -43,14 +43,13 @@
         android:name="com.gabutproject.triviaapp.GameWonFragment"
         android:label="GameWonFragment" >
         <action
-            android:id="@+id/action_gameWonFragment_to_titleFragment"
-            app:destination="@id/titleFragment"
+            android:id="@+id/action_gameWonFragment_to_gameFragment"
+            app:destination="@id/gameFragment"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/titleFragment"
-            app:popUpToInclusive="true" />
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/titleFragment" />
         <argument
             android:name="numQuestions"
             app:argType="integer" />
@@ -66,9 +65,9 @@
             app:destination="@id/gameFragment"
             app:enterAnim="@anim/slide_in_left"
             app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_out_left"
-            app:popUpTo="@id/gameFragment" />
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/titleFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
